@@ -1,17 +1,15 @@
-"""
 ####################################################################################
 #####                    File: src/UI/streamlit_app.py                         #####
 #####                         Author: Ravi Dhir                                #####
-#####                      Created on: 09/03/2024                              #####
+#####                      Created on: 09/10/2024                              #####
 #####                Streamlit Application UI Main File                        #####
 ####################################################################################
-"""
 
 import os
 import sys
 
 # Add the Application root to Python path and set it as an environment variable
-ROOT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+ROOT_PATH = os.getenv("ROOT_DIR")
 sys.path.insert(0, ROOT_PATH)
 os.environ["ROOT_PATH"] = ROOT_PATH  # Add ROOT_PATH to the environment
 print(f"Added {ROOT_PATH} to the Python path and environment.")
@@ -21,32 +19,35 @@ from dotenv import load_dotenv
 
 from src.UI.htmltemplates import css
 from src.UI.streamlit_pages import (
-    game_documents_admin,
-    generate_game_page,
-    metadata_viewer,
+    data_upload_page,
+    model_training_page,
+    eda_viewer,
 )
 
 # Load environment variables
 load_dotenv()
 
-# Path to the documents directory from .env
-DOCS_PATH = os.getenv("DOCS_PATH")
+# Path to data directories from .env
+RAW_DATA_PATH = os.getenv("RAW_DATA_PATH")
+PROCESSED_DATA_PATH = os.getenv("PROCESSED_DATA_PATH")
 
 # Page configuration and styling
-st.set_page_config(page_title="GameWeaverAI", page_icon="🤖", layout="wide",initial_sidebar_state="collapsed")
+st.set_page_config(page_title="MLAAS", page_icon="🤖", layout="wide", initial_sidebar_state="collapsed")
 st.markdown(css, unsafe_allow_html=True)
 
 def main():
-    st.sidebar.title("GameWeaverAI - Navigation")
-    pages = ["GameweaverAI -  Home","Admin - Upload Game Document", "Admin - Game Data Viewer"]
+    st.sidebar.title("MLAAS - Navigation")
+    pages = ["MLAAS - Home", "Upload Data", "EDA Viewer", "Train Model"]
     choice = st.sidebar.radio("Select a Page", pages)
 
-    if choice == "GameweaverAI -  Home":
-        generate_game_page()
-    elif choice == "Admin - Upload Game Document":
-        game_documents_admin()
-    elif choice == "Admin - Game Data Viewer":
-        metadata_viewer()
+    if choice == "MLAAS - Home":
+        st.write("Welcome to MLAAS! Please navigate to the appropriate page to upload data, perform EDA, or train models.")
+    elif choice == "Upload Data":
+        data_upload_page()
+    elif choice == "EDA Viewer":
+        eda_viewer()
+    elif choice == "Train Model":
+        model_training_page()
 
 if __name__ == "__main__":
     main()

@@ -1,3 +1,10 @@
+####################################################################################
+#####                       File: src/utils/helper.py                          #####
+#####                         Author: Ravi Dhir                                #####
+#####                      Created on: 09/10/2024                              #####
+#####                 General Functions for Applicatation Dev                  #####
+####################################################################################
+
 import os
 from pathlib import Path
 
