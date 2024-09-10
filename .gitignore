@@ -1,0 +1,12 @@
+## Directory
+/.venv
+/data
+/.vscode
+/__pycache__
+/models
+/vectorstore
+
+
+## Files
+*.pyc
+.env
