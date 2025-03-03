@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900">
+  <!-- Background and Title -->
+  <rect width="1100" height="900" fill="#f8f9fa" />
+  <text x="550" y="40" font-family="Arial" font-size="26" font-weight="bold" text-anchor="middle" fill="#333">Machine Learning as a Service (MLAAS) - Architecture Diagram</text>
+  
+  <!-- Main Container -->
+  <rect x="50" y="70" width="1000" height="780" rx="10" ry="10" fill="#f0f0f0" stroke="#d0d0d0" stroke-width="2" />
+  
+  <!-- On-Premises RedHat ECS Environment Label -->
+  <text x="550" y="90" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#555">On-Premises RedHat ECS Environment</text>
+  
+  <!-- OpenShift Cluster -->
+  <rect x="70" y="110" width="960" height="720" rx="5" ry="5" fill="#fff" stroke="#ccc" stroke-width="2" />
+  <text x="550" y="130" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#555">OpenShift Cluster</text>
+
+  <!-- Main Monorepo -->
+  <rect x="90" y="150" width="580" height="660" rx="5" ry="5" fill="#e6f7ff" stroke="#91d5ff" stroke-width="2" />
+  <text x="380" y="170" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1890ff">Main Monorepo</text>
+  
+  <!-- Frontend Layer -->
+  <rect x="110" y="190" width="540" height="100" rx="5" ry="5" fill="#fff" stroke="#d9d9d9" stroke-width="2" />
+  <text x="130" y="210" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Frontend Layer (Next.js)</text>
+  
+  <!-- Frontend Components -->
+  <rect x="120" y="220" width="110" height="60" rx="3" ry="3" fill="#f6ffed" stroke="#b7eb8f" stroke-width="1" />
+  <text x="175" y="250" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">Data Exploration Dashboards</text>
+  
+  <rect x="240" y="220" width="110" height="60" rx="3" ry="3" fill="#f6ffed" stroke="#b7eb8f" stroke-width="1" />
+  <text x="295" y="250" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">Model Training UI</text>
+  
+  <rect x="360" y="220" width="110" height="60" rx="3" ry="3" fill="#f6ffed" stroke="#b7eb8f" stroke-width="1" />
+  <text x="415" y="250" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">Database Query Interface</text>
+  
+  <rect x="480" y="220" width="110" height="60" rx="3" ry="3" fill="#f6ffed" stroke="#b7eb8f" stroke-width="1" />
+  <text x="535" y="250" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">Administration Portal</text>
+  
+  <!-- API Gateway -->
+  <rect x="110" y="300" width="540" height="40" rx="5" ry="5" fill="#fff3e0" stroke="#ffcc80" stroke-width="2" />
+  <text x="380" y="325" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">API Gateway (FastAPI)</text>
+  
+  <!-- Service Layer -->
+  <rect x="110" y="350" width="540" height="220" rx="5" ry="5" fill="#fff" stroke="#d9d9d9" stroke-width="2" />
+  <text x="130" y="370" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Service Layer (FastAPI Microservices)</text>
+  
+  <!-- Services -->
+  <rect x="120" y="380" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="170" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Authentication Engine</text>
+  
+  <rect x="230" y="380" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="280" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Data Ingestion Engine</text>
+  
+  <rect x="340" y="380" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="390" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">EDA Engine</text>
+  
+  <rect x="450" y="380" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="500" y="410" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Model Training Engine</text>
+  
+  <rect x="120" y="440" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="170" y="470" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">DB Connectivity Engine</text>
+  
+  <rect x="230" y="440" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="280" y="470" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Model Recommendation Engine</text>
+  
+  <rect x="340" y="440" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="390" y="470" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">MLOps Engine</text>
+  
+  <rect x="450" y="440" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="500" y="470" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Team Workspace Engine</text>
+  
+  <rect x="120" y="500" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="170" y="530" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Data Preparation Engine</text>
+  
+  <rect x="230" y="500" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="280" y="530" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Governance Engine</text>
+  
+  <rect x="340" y="500" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="390" y="530" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Monitoring Engine</text>
+  
+  <rect x="450" y="500" width="100" height="50" rx="3" ry="3" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="500" y="530" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Model Explainability Engine</text>
+  
+  <!-- Infrastructure Layer -->
+  <rect x="110" y="580" width="540" height="220" rx="5" ry="5" fill="#fff" stroke="#d9d9d9" stroke-width="2" />
+  <text x="130" y="600" font-family="Arial" font-size="14" font-weight="bold" fill="#555">Infrastructure Layer</text>
+  
+  <!-- Database -->
+  <rect x="130" y="620" width="160" height="70" rx="3" ry="3" fill="#fff0f6" stroke="#ffadd2" stroke-width="1" />
+  <text x="210" y="650" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#555">PostgreSQL</text>
+  <text x="210" y="670" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Model Registry, User Data, Metadata</text>
+  
+  <!-- Storage -->
+  <rect x="300" y="620" width="160" height="70" rx="3" ry="3" fill="#fff0f6" stroke="#ffadd2" stroke-width="1" />
+  <text x="380" y="650" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#555">File Storage</text>
+  <text x="380" y="670" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Dataset Storage</text>
+  
+  <rect x="470" y="620" width="160" height="70" rx="3" ry="3" fill="#fff0f6" stroke="#ffadd2" stroke-width="1" />
+  <text x="550" y="650" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#555">Splunk</text>
+  <text x="550" y="670" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">Logging & Monitoring</text>
+  
+  <!-- Jenkins -->
+  <rect x="130" y="700" width="240" height="50" rx="3" ry="3" fill="#f9f0ff" stroke="#d3adf7" stroke-width="1" />
+  <text x="250" y="730" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#555">Jenkins CI/CD Pipeline</text>
+  
+  <!-- Docker Registry -->
+  <rect x="380" y="700" width="250" height="50" rx="3" ry="3" fill="#f9f0ff" stroke="#d3adf7" stroke-width="1" />
+  <text x="505" y="730" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold" fill="#555">Docker Registry</text>
+  
+  <!-- MLflow Repository -->
+  <rect x="680" y="150" width="350" height="330" rx="5" ry="5" fill="#f0f9ff" stroke="#87e8de" stroke-width="2" />
+  <text x="855" y="170" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#08979c">MLflow Repository</text>
+  
+  <!-- MLflow Services -->
+  <rect x="700" y="190" width="310" height="180" rx="5" ry="5" fill="#fff" stroke="#d9d9d9" stroke-width="2" />
+  <text x="720" y="210" font-family="Arial" font-size="14" font-weight="bold" fill="#555">MLflow Services</text>
+  
+  <rect x="720" y="230" width="130" height="60" rx="3" ry="3" fill="#e6fffb" stroke="#87e8de" stroke-width="1" />
+  <text x="785" y="260" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">Experiment Tracking Service</text>
+  
+  <rect x="860" y="230" width="130" height="60" rx="3" ry="3" fill="#e6fffb" stroke="#87e8de" stroke-width="1" />
+  <text x="925" y="260" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">Model Registry Service</text>
+  
+  <rect x="720" y="300" width="130" height="60" rx="3" ry="3" fill="#e6fffb" stroke="#87e8de" stroke-width="1" />
+  <text x="785" y="330" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">Artifact Management Service</text>
+  
+  <rect x="860" y="300" width="130" height="60" rx="3" ry="3" fill="#e6fffb" stroke="#87e8de" stroke-width="1" />
+  <text x="925" y="330" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">Run Execution Service</text>
+  
+  <!-- MLflow Storage -->
+  <rect x="700" y="380" width="310" height="90" rx="5" ry="5" fill="#fff0f6" stroke="#ffadd2" stroke-width="1" />
+  <text x="720" y="400" font-family="Arial" font-size="14" font-weight="bold" fill="#555">MLflow Storage</text>
+  
+  <rect x="720" y="410" width="130" height="50" rx="3" ry="3" fill="#fff0f6" stroke="#ffadd2" stroke-width="1" />
+  <text x="785" y="440" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">PostgreSQL (Metadata)</text>
+  
+  <rect x="860" y="410" width="130" height="50" rx="3" ry="3" fill="#fff0f6" stroke="#ffadd2" stroke-width="1" />
+  <text x="925" y="440" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">File Storage (Artifacts)</text>
+  
+  <!-- External Services -->
+  <rect x="680" y="490" width="350" height="320" rx="5" ry="5" fill="#fffbe6" stroke="#ffe58f" stroke-width="2" />
+  <text x="855" y="510" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#ad8b00">External Services</text>
+  
+  <!-- JFrog Artifactory -->
+  <rect x="700" y="530" width="310" height="80" rx="5" ry="5" fill="#fffbe6" stroke="#ffe58f" stroke-width="1" />
+  <text x="855" y="560" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">JFrog Artifactory</text>
+  <text x="855" y="580" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">Approved Model Repository</text>
+  
+  <!-- CyberArc -->
+  <rect x="700" y="620" width="310" height="80" rx="5" ry="5" fill="#fffbe6" stroke="#ffe58f" stroke-width="1" />
+  <text x="855" y="650" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">CyberArc</text>
+  <text x="855" y="670" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">Password Management</text>
+  
+  <!-- HIVE Database -->
+  <rect x="700" y="710" width="310" height="80" rx="5" ry="5" fill="#fffbe6" stroke="#ffe58f" stroke-width="1" />
+  <text x="855" y="740" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#555">HIVE Database</text>
+  <text x="855" y="760" font-family="Arial" font-size="11" text-anchor="middle" fill="#555">External Data Source</text>
+  
+  <!-- Connections -->
+  <!-- Frontend to API Gateway -->
+  <path d="M380 290 L380 300" stroke="#666" stroke-width="2" fill="none" />
+  
+  <!-- API Gateway to Service Layer -->
+  <path d="M380 340 L380 350" stroke="#666" stroke-width="2" fill="none" />
+  
+  <!-- Service Layer to Infrastructure -->
+  <path d="M380 570 L380 580" stroke="#666" stroke-width="2" fill="none" />
+  
+  <!-- Main to MLflow -->
+  <path d="M670 315 L680 315" stroke="#666" stroke-width="2" fill="none" />
+  <circle cx="675" cy="315" r="4" fill="#666" />
+  
+  <!-- MLflow to Artifactory -->
+  <path d="M855 490 L855 530" stroke="#666" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+  
+  <!-- Main to External Services -->
+  <path d="M630 650 L700 650" stroke="#666" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+  <circle cx="665" cy="650" r="4" fill="#666" />
+  
+  <!-- Main to HIVE -->
+  <path d="M630 700 L700 750" stroke="#666" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+  <circle cx="665" cy="725" r="4" fill="#666" />
+  
+  <!-- Legend -->
+  <rect x="70" y="845" width="960" height="40" rx="5" ry="5" fill="#fff" stroke="#ccc" stroke-width="1" />
+  
+  <!-- Legend items -->
+  <rect x="90" y="855" width="20" height="10" fill="#e6f7ff" stroke="#91d5ff" stroke-width="1" />
+  <text x="120" y="865" font-family="Arial" font-size="12" fill="#555">Main Monorepo</text>
+  
+  <rect x="210" y="855" width="20" height="10" fill="#f0f9ff" stroke="#87e8de" stroke-width="1" />
+  <text x="240" y="865" font-family="Arial" font-size="12" fill="#555">MLflow Repository</text>
+  
+  <rect x="360" y="855" width="20" height="10" fill="#fffbe6" stroke="#ffe58f" stroke-width="1" />
+  <text x="390" y="865" font-family="Arial" font-size="12" fill="#555">External Services</text>
+  
+  <rect x="510" y="855" width="20" height="10" fill="#fff0f6" stroke="#ffadd2" stroke-width="1" />
+  <text x="540" y="865" font-family="Arial" font-size="12" fill="#555">Storage Systems</text>
+  
+  <line x1="640" y1="860" x2="670" y2="860" stroke="#666" stroke-width="2" />
+  <text x="700" y="865" font-family="Arial" font-size="12" fill="#555">Direct Connection</text>
+  
+  <line x1="780" y1="860" x2="810" y2="860" stroke="#666" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="840" y="865" font-family="Arial" font-size="12" fill="#555">API Connection</text>
+</svg>
